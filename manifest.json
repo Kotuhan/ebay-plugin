@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+
+	"name": "ebay checker",
+	"version": "0.1",
+	"description": "getting info about ebay items",
+
+	"content_scripts": [{
+    "matches": ["http://www.ebay.co.uk/sch/*",
+    			"http://www.kotuhan.pe.hu/*"],
+    "js": ["addscript.js", "jquery.js"]
+	}],
+
+	"options_page": "options.html",
+	"web_accessible_resources": ["function.js", "jquery.js", "filesaver.js"]
+}
